@@ -76,6 +76,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/enfant.c">
+			<Option target="OgreBoulotteur"/>
+		</Unit>
+		<Unit filename="/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/enfant.h">
+			<Option target="OgreBoulotteur"/>
+		</Unit>
 		<Unit filename="/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/foret.c">
 			<Option target="OgreBoulotteur"/>
 		</Unit>
@@ -83,6 +89,9 @@
 			<Option target="OgreBoulotteur"/>
 		</Unit>
 		<Unit filename="/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/main.c">
+			<Option target="OgreBoulotteur"/>
+		</Unit>
+		<Unit filename="/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/ogreBoulotteur.h">
 			<Option target="OgreBoulotteur"/>
 		</Unit>
 		<Unit filename="/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/CMakeLists.txt">

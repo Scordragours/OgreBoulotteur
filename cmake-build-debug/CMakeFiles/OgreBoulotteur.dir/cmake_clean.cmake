@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/OgreBoulotteur.dir/enfant.c.o"
   "CMakeFiles/OgreBoulotteur.dir/foret.c.o"
   "CMakeFiles/OgreBoulotteur.dir/main.c.o"
   "OgreBoulotteur"

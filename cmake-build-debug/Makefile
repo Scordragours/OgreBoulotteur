@@ -143,6 +143,33 @@ OgreBoulotteur/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OgreBoulotteur.dir/build.make CMakeFiles/OgreBoulotteur.dir/build
 .PHONY : OgreBoulotteur/fast
 
+enfant.o: enfant.c.o
+
+.PHONY : enfant.o
+
+# target to build an object file
+enfant.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OgreBoulotteur.dir/build.make CMakeFiles/OgreBoulotteur.dir/enfant.c.o
+.PHONY : enfant.c.o
+
+enfant.i: enfant.c.i
+
+.PHONY : enfant.i
+
+# target to preprocess a source file
+enfant.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OgreBoulotteur.dir/build.make CMakeFiles/OgreBoulotteur.dir/enfant.c.i
+.PHONY : enfant.c.i
+
+enfant.s: enfant.c.s
+
+.PHONY : enfant.s
+
+# target to generate assembly for a file
+enfant.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OgreBoulotteur.dir/build.make CMakeFiles/OgreBoulotteur.dir/enfant.c.s
+.PHONY : enfant.c.s
+
 foret.o: foret.c.o
 
 .PHONY : foret.o
@@ -206,6 +233,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... OgreBoulotteur"
+	@echo "... enfant.o"
+	@echo "... enfant.i"
+	@echo "... enfant.s"
 	@echo "... foret.o"
 	@echo "... foret.i"
 	@echo "... foret.s"

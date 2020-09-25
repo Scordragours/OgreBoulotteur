@@ -2,16 +2,18 @@
 // Created by scordragours on 22/09/2020.
 //
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <time.h>
 #include "foret.h"
 
-void afficherForet(Foret foret){
+void afficherForet(Foret foret, Enfants enfants){
     int x, y;
     for(y=0; y < FORET_HAUTEUR; y++){
         for(x=0; x < FORET_LONGUEUR; x++){
-            printf("%c", foret[y][x]);
+            Enfant *enfant = isEnfantPresent(enfants, x, y);
+            if(enfant != NULL){
+                printf("%c", CharEnfant);
+            }else{
+                printf("%c", foret[y][x]);
+            }
         }
         printf("\n");
     }

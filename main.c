@@ -2,7 +2,9 @@
 
 int main() {
     Foret foret;
+    Enfants enfants;
     initialiserForet(foret);
-    afficherForet(foret);
+    initialiserEnfants(enfants, foret);
+    afficherForet(foret, enfants);
     return 0;
 }
