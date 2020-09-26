@@ -14,7 +14,7 @@ void initialiserOgre(Ogre *ogre, Foret foret){
 }
 
 
-void deplacerOgre(Ogre *ogre, Foret foret){
+void deplacerOgre(Ogre *ogre, Foret foret, Enfants enfants){
     int X, Y;
     Direction direction;
     direction = rand() % 4;
@@ -40,6 +40,15 @@ void deplacerOgre(Ogre *ogre, Foret foret){
     if(foret[Y][X] == SOL){
         ogre->X = X;
         ogre->Y = Y;
+        boulotterEnfants(enfants, ogre);
+    }
+}
+
+void boulotterEnfants(Enfants enfants, Ogre *ogre){
+    for(int i = 0; i < NombreEnfants; i++){
+        if((enfants[i].etat == VIVANT)&&(enfants[i].Y == ogre->Y)&&(enfants[i].X == ogre->X)){
+            enfants[i].etat = MORT;
+        }
     }
 }
 

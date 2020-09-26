@@ -16,6 +16,7 @@ void initialiserEnfant(Enfant *enfant, Foret foret){
     }while (foret[y][x] != SOL);
     enfant->X = x;
     enfant->Y = y;
+    enfant->etat = VIVANT;
 }
 
 Enfant *isEnfantPresent(Enfants enfants, int x, int y){
@@ -29,7 +30,9 @@ Enfant *isEnfantPresent(Enfants enfants, int x, int y){
 
 void deplacerEnfants(Enfants enfants, Foret foret){
     for(int i = 0; i < NombreEnfants; i++){
-        deplacerEnfant(&enfants[i], foret);
+        if(enfants[i].etat == VIVANT){
+            deplacerEnfant(&enfants[i], foret);
+        }
     }
 }
 void deplacerEnfant(Enfant *enfant, Foret foret){

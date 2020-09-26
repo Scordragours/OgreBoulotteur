@@ -13,7 +13,11 @@ void afficherForet(Foret foret, Enfants enfants, Ogre *ogre){
             }else{
                 Enfant *enfant = isEnfantPresent(enfants, x, y);
                 if(enfant != NULL){
-                    printf("%c", CharEnfant);
+                    if(enfant->etat == MORT){
+                        printf("%c", CharMort);
+                    }else{
+                        printf("%c", CharEnfant);
+                    }
                 }else{
                     printf("%c", foret[y][x]);
                 }
@@ -41,7 +45,7 @@ void faireVivreForet(Foret foret, Enfants enfants, Ogre *ogre){
     for(;;){
         afficherForet(foret, enfants, ogre);
         deplacerEnfants(enfants, foret);
-        deplacerOgre(ogre, foret);
+        deplacerOgre(ogre, foret, enfants);
         sleep(1);
     }
 }

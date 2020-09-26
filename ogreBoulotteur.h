@@ -8,8 +8,8 @@
 #ifndef OGREBOULOTTEUR_H_INCLUDED
 #define OGREBOULOTTEUR_H_INCLUDED
 
-#define FORET_HAUTEUR 30
-#define FORET_LONGUEUR 30
+#define FORET_HAUTEUR 15
+#define FORET_LONGUEUR 15
 
 #define SOL ' '
 #define ARBRE '%'
@@ -17,12 +17,19 @@
 
 #define CharEnfant 'A'
 #define CharOgre 'O'
+#define CharMort '+'
 #define NombreEnfants 5
 
 typedef char Foret[FORET_HAUTEUR][FORET_LONGUEUR];
 
+typedef enum Etat{
+    VIVANT,
+    MORT
+} Etat;
+
 typedef struct Enfant{
     int X, Y;
+    Etat etat;
 } Enfant;
 
 typedef Enfant Enfants[NombreEnfants];
