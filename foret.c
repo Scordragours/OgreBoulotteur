@@ -3,6 +3,7 @@
 //
 
 #include "foret.h"
+#include <unistd.h>
 
 void afficherForet(Foret foret, Enfants enfants){
     int x, y;
@@ -30,5 +31,13 @@ void initialiserForet(Foret foret){
                 foret[y][x] = SOL;
             }
         }
+    }
+}
+
+void faireVivreForet(Foret foret, Enfants enfants){
+    for(;;){
+        afficherForet(foret, enfants);
+        deplacerEnfants(enfants, foret);
+        sleep(1);
     }
 }

@@ -23,3 +23,10 @@ typedef struct Enfant{
 } Enfant;
 
 typedef Enfant Enfants[NombreEnfants];
+
+typedef enum Direction{
+    HAUT,
+    DROITE,
+    BAS,
+    GAUCHE
+} Direction;

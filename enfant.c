@@ -27,3 +27,37 @@ Enfant *isEnfantPresent(Enfants enfants, int x, int y){
     }
     return NULL;
 }
+
+void deplacerEnfants(Enfants enfants, Foret foret){
+    for(int i = 0; i < NombreEnfants; i++){
+        deplacerEnfant(&enfants[i], foret);
+    }
+}
+void deplacerEnfant(Enfant *enfant, Foret foret){
+    int X, Y;
+    Direction direction;
+    direction = rand() % 4;
+
+    Y = enfant->Y;
+    X = enfant->X;
+
+    switch(direction){
+        case HAUT:
+            Y--;
+            break;
+        case BAS:
+            Y++;
+            break;
+        case GAUCHE:
+            X--;
+            break;
+        case DROITE:
+            X++;
+            break;
+    }
+
+    if(foret[Y][X] == SOL){
+        enfant->X = X;
+        enfant->Y = Y;
+    }
+}

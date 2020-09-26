@@ -6,3 +6,5 @@
 
 void afficherForet(Foret foret, Enfants enfants);
 void initialiserForet(Foret foret);
+
+void faireVivreForet(Foret foret, Enfants enfants);

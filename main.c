@@ -5,6 +5,6 @@ int main() {
     Enfants enfants;
     initialiserForet(foret);
     initialiserEnfants(enfants, foret);
-    afficherForet(foret, enfants);
+    faireVivreForet(foret, enfants);
     return 0;
 }
