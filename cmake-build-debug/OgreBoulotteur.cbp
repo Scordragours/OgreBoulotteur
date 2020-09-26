@@ -91,6 +91,12 @@
 		<Unit filename="/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/main.c">
 			<Option target="OgreBoulotteur"/>
 		</Unit>
+		<Unit filename="/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/ogre.c">
+			<Option target="OgreBoulotteur"/>
+		</Unit>
+		<Unit filename="/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/ogre.h">
+			<Option target="OgreBoulotteur"/>
+		</Unit>
 		<Unit filename="/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/ogreBoulotteur.h">
 			<Option target="OgreBoulotteur"/>
 		</Unit>

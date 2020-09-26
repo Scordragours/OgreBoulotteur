@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/enfant.c" "/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/cmake-build-debug/CMakeFiles/OgreBoulotteur.dir/enfant.c.o"
   "/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/foret.c" "/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/cmake-build-debug/CMakeFiles/OgreBoulotteur.dir/foret.c.o"
   "/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/main.c" "/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/cmake-build-debug/CMakeFiles/OgreBoulotteur.dir/main.c.o"
+  "/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/ogre.c" "/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/cmake-build-debug/CMakeFiles/OgreBoulotteur.dir/ogre.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

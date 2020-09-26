@@ -1,7 +1,6 @@
 //
 // Created by scordragours on 25/09/2020.
 //
-
 #include "enfant.h"
 
 void initialiserEnfants(Enfants enfants, Foret foret){

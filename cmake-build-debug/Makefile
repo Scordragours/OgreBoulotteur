@@ -224,6 +224,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OgreBoulotteur.dir/build.make CMakeFiles/OgreBoulotteur.dir/main.c.s
 .PHONY : main.c.s
 
+ogre.o: ogre.c.o
+
+.PHONY : ogre.o
+
+# target to build an object file
+ogre.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OgreBoulotteur.dir/build.make CMakeFiles/OgreBoulotteur.dir/ogre.c.o
+.PHONY : ogre.c.o
+
+ogre.i: ogre.c.i
+
+.PHONY : ogre.i
+
+# target to preprocess a source file
+ogre.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OgreBoulotteur.dir/build.make CMakeFiles/OgreBoulotteur.dir/ogre.c.i
+.PHONY : ogre.c.i
+
+ogre.s: ogre.c.s
+
+.PHONY : ogre.s
+
+# target to generate assembly for a file
+ogre.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OgreBoulotteur.dir/build.make CMakeFiles/OgreBoulotteur.dir/ogre.c.s
+.PHONY : ogre.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -242,6 +269,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... ogre.o"
+	@echo "... ogre.i"
+	@echo "... ogre.s"
 .PHONY : help
 
 

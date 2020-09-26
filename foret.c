@@ -1,19 +1,22 @@
 //
 // Created by scordragours on 22/09/2020.
 //
-
 #include "foret.h"
 #include <unistd.h>
 
-void afficherForet(Foret foret, Enfants enfants){
+void afficherForet(Foret foret, Enfants enfants, Ogre *ogre){
     int x, y;
     for(y=0; y < FORET_HAUTEUR; y++){
         for(x=0; x < FORET_LONGUEUR; x++){
-            Enfant *enfant = isEnfantPresent(enfants, x, y);
-            if(enfant != NULL){
-                printf("%c", CharEnfant);
+            if(ogrePresent(ogre, x, y)){
+                printf("%c", CharOgre);
             }else{
-                printf("%c", foret[y][x]);
+                Enfant *enfant = isEnfantPresent(enfants, x, y);
+                if(enfant != NULL){
+                    printf("%c", CharEnfant);
+                }else{
+                    printf("%c", foret[y][x]);
+                }
             }
         }
         printf("\n");
@@ -34,10 +37,11 @@ void initialiserForet(Foret foret){
     }
 }
 
-void faireVivreForet(Foret foret, Enfants enfants){
+void faireVivreForet(Foret foret, Enfants enfants, Ogre *ogre){
     for(;;){
-        afficherForet(foret, enfants);
+        afficherForet(foret, enfants, ogre);
         deplacerEnfants(enfants, foret);
+        deplacerOgre(ogre, foret);
         sleep(1);
     }
 }

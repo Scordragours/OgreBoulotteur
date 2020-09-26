@@ -8,10 +8,16 @@ CMakeFiles/OgreBoulotteur.dir/enfant.c.o: ../ogreBoulotteur.h
 CMakeFiles/OgreBoulotteur.dir/foret.c.o: ../enfant.h
 CMakeFiles/OgreBoulotteur.dir/foret.c.o: ../foret.c
 CMakeFiles/OgreBoulotteur.dir/foret.c.o: ../foret.h
+CMakeFiles/OgreBoulotteur.dir/foret.c.o: ../ogre.h
 CMakeFiles/OgreBoulotteur.dir/foret.c.o: ../ogreBoulotteur.h
 
 CMakeFiles/OgreBoulotteur.dir/main.c.o: ../enfant.h
 CMakeFiles/OgreBoulotteur.dir/main.c.o: ../foret.h
 CMakeFiles/OgreBoulotteur.dir/main.c.o: ../main.c
+CMakeFiles/OgreBoulotteur.dir/main.c.o: ../ogre.h
 CMakeFiles/OgreBoulotteur.dir/main.c.o: ../ogreBoulotteur.h
+
+CMakeFiles/OgreBoulotteur.dir/ogre.c.o: ../ogre.c
+CMakeFiles/OgreBoulotteur.dir/ogre.c.o: ../ogre.h
+CMakeFiles/OgreBoulotteur.dir/ogre.c.o: ../ogreBoulotteur.h
 
