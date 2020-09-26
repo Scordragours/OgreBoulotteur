@@ -1,3 +1,0 @@
-/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/cmake-build-debug/CMakeFiles/edit_cache.dir
-/media/scordragours/Documents/4) Projets/Projets/OgreBoulotteur/cmake-build-debug/CMakeFiles/OgreBoulotteur.dir
